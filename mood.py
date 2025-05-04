@@ -41,6 +41,6 @@ def analyze_text(text):
         prev_mood["value"] = mood
         mood_line = f"Mood: {mood}"
     else:
-        mood_line = "(no mood change)"
+        mood_line = f"Mood: {mood}"
 
     return f"Sentiment: {sentiment}\n{mood_line}"
