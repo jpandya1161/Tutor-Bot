@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mood-chat-prediction-container {
+  display: flex;
+  width: 90%;
+  height: 80vh;
+  max-width: 1200px;
+}
+
+.mood-container, .chat-container, .prediction-container {
+  background-color: #e5ddd5;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.mood-container {
+  width: 20%; /* Takes up 20% of the screen */
+  background-color: #f1f1f1; /* Same as prediction container */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-container {
+  width: 50%; /* Takes up 50% of the screen */
+}
+
+.prediction-container {
+  width: 30%; /* Takes up 40% of the screen */
+  background-color: #f1f1f1;
+  padding: 15px;
+  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #075e54; /* WhatsApp-like header color */
+  margin-bottom: 10px;
+}
+
+#moodbox {
+  margin-top: 20px;
+}
+
+.mood-item {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mood-item:hover {
+  background-color: #e5f7e0;
+}
+
+#chatbox {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  max-width: 60%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+.user-message, .user-translation {
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+  margin: 5px;
+  align-self: flex-end;
+  display: inline-block;
+}
+
+.bot-message, .bot-translation {
+  background-color: #ffffff;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+  margin: 5px;
+  align-self: flex-start;
+  display: inline-block;
+}
+
+.input-area {
+  display: flex;
+  padding: 10px;
+  background: white;
+  border-top: 1px solid #ccc;
+}
+
+textarea {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #25d366; /* WhatsApp green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #128c7e;
+}
+
+#suggestions {
+  margin-top: 20px;
+}
+
+.suggestion-item {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #e5f7e0;
+}
+
+.mood-container {
+  width: 20%;
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mood-section,
+.grammar-section {
+  flex: 1; /* Divide the mood-container equally */
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  overflow-y: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.grammar-item {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.grammar-item:hover {
+  background-color: #e5f7e0;
+}
+
+.user-translation {
+  background-color: #dfffe2;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 12px;
+  margin: 3px 0 10px auto;
+  max-width: 70%;
+  text-align: right;
+  font-style: italic;
+}
+
+.bot-translation {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 12px;
+  margin: 3px 0 10px 0;
+  max-width: 70%;
+  text-align: left;
+  font-style: italic;
+  margin-left: 10px;
+}

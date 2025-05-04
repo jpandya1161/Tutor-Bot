@@ -1,0 +1,12 @@
+flask
+openai
+requests
+python-dotenv
+gunicorn
+torch
+transformers
+gradio
+sentencepiece
+language_tool_python
+pyspellchecker
+scikit-learn
