@@ -10,3 +10,6 @@ sentencepiece
 language_tool_python
 pyspellchecker
 scikit-learn
+pandas
+matplotlib
+seaborn
