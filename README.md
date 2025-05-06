@@ -70,23 +70,35 @@ TutorBot creates an interactive, bilingual tutoring experience using advanced NL
 ## 📂 Code Structure
 
 ```
-TutorBot/
-├── app.py                      # Flask application
-├── grammer.py                  # French grammar correction
-├── mood.py                     # Mood detection helper
-├── mood_analysis.py            # Separate analysis interface
-├── predict.py                  # French sentence prediction
-├── chatbot_mood_sentiment.py   # Sentiment and emotion handler
-├── static/                     # JS/CSS assets
-│   └── js/, css/
+Tutor-Bot/
+├── app.py                          # Main Flask application
+├── chatbot_mood_sentiment.py       # Combined mood & sentiment analysis logic
+├── mood.py                         # Utility for loading and running mood classifier
+├── mood_analysis.py                # Separate interface for mood analysis evaluation
+├── grammer.py                      # French grammar correction module
+├── grammer_error_analysis.ipynb    # Grammar module testing & performance notebook
+├── mood_error_analysis.ipynb       # Evaluation of mood model on 300 test samples
+├── predict.py                      # French-English sentence completion and translation
+├── goemotions_300_cleaned.csv      # Labeled evaluation dataset for mood model
+├── book.txt                        # French book source for grammar evaluation
+├── requirements.txt                # Python dependencies for the project
+├── README.md                       # Project overview and setup instructions
 ├── templates/
-│   └── index.html              # Frontend interface
-├── goemotions_300_cleaned.csv  # Test set for mood model
-├── book.txt                    # French text source for evaluation
-├── grammer_error_analysis.ipynb
-├── mood_error_analysis.ipynb
-├── requirements.txt
-├── README.md
+│   └── index.html                  # Web frontend template
+├── static/
+│   ├── css/
+│   │   └── style.css              # Custom styles for frontend
+│   └── js/
+│       └── script.js              # Frontend behavior logic
+├── fine-tuned-goemotions/          # Zipped Hugging Face-compatible emotion model
+│   ├── config.json
+│   ├── merges.txt
+│   ├── model.safetensors
+│   ├── special_tokens_map.json
+│   ├── tokenizer.json
+│   ├── tokenizer_config.json
+│   ├── training_args.bin
+│   └── vocab.json
 ```
 
 ---
@@ -154,4 +166,4 @@ python app.py
 - **Namatha Chintakunta** – NXC230041  
 - **Nanddanaa Bobba** – NXB240002
 
----
+---"" 
